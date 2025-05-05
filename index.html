@@ -13,11 +13,30 @@
             padding: 0;
         }
         header {
+            position: relative;
             background-color: #97ff91;
-            color: white;
+            color: black; /* changed from white to black */
             padding: 20px;
             text-align: center;
             border-bottom: 5px solid #fa91ff;
+        }
+        .media-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: #fa91ff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 30px;
+            font-size: 14px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            transition: transform 0.2s, background 0.3s;
+        }
+        .media-button:hover {
+            background: #ff6f61;
+            transform: scale(1.1) rotate(-5deg);
         }
         main {
             padding: 20px;
@@ -43,7 +62,7 @@
         footer {
             text-align: center;
             padding: 10px;
-            color: white;
+            color: black; /* changed from white to black */
             background-color: #6ff2a4;
             border-top: 5px solid #fa91ff;
         }
@@ -51,6 +70,9 @@
 </head>
 <body>
     <header>
+        <a href="media.html">
+            <button class="media-button">📸 Media</button>
+        </a>
         <h1>Why I Should Have Social Media</h1>
     </header>
 
